@@ -1,15 +1,10 @@
 from preprocessing import CustomPreprocess
 import pandas as pd
 import numpy as np
-import re
-import nltk
-from nltk.corpus import stopwords
-from numpy import array
-import tensorflow as tf
-from keras.preprocessing.text import one_hot, Tokenizer
+from keras.preprocessing.text import Tokenizer
 from keras.models import Sequential
-from keras.layers import Activation, Dropout, Dense
-from keras.layers import Flatten, GlobalMaxPooling1D, Embedding, Conv1D, LSTM
+from keras.layers import Dense
+from keras.layers import Embedding, LSTM
 from sklearn.model_selection import train_test_split
 from keras.preprocessing.sequence import pad_sequences
 import matplotlib.pyplot as plt
