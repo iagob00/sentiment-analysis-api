@@ -1,6 +1,7 @@
 import re
 from nltk.corpus import stopwords
-
+import nltk
+nltk.download('stopwords')
 
 stopwords_list = set(stopwords.words('english'))
 TAG_RE = re.compile(r'<[^>]+>')
